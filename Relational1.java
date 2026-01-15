@@ -11,5 +11,6 @@ class Relational1{
 		System.out.println(22.0f/7.0f==22.0/7.0);
 		System.out.println(22.0f/7.0f>22.0/7.0);
 		System.out.println(22.0f/7.0f<=22.0/7.0);
+		System.out.println(0.1d+0.2d==0.3d);
 	}
-}
+}       
