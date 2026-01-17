@@ -6,6 +6,8 @@ class Conditional5{
 		int n3=64;
 		int ans=n1>n2?n1>n3?n1:n3:n2>n3?n2:n3;
 		//int ans=n1>n2&&n1>n3?n1:n2>n3?n2:n3;Using Logical And
+		//int ans = (n1 > n2 && n1 > n3) ? n1 : (n2 > n3 ? n2 : n3);//Optimize Solution
+
 		System.out.println(ans);
 	}  
 }        
