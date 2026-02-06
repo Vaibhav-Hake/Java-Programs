@@ -39,7 +39,7 @@ class Bank{
     			    System.out.print(" Balance:");
     			    balance = new Scanner(System.in).nextDouble();
 					a=LocalDateTime.now();
-					transiction.add("DEPOSITE(CREATION) : "+balance+" Rs. "+(a.getHour())/12+":"+a.getMinute()+":"+a.getSecond());
+					transiction.add("DEPOSITE(CREATION) : "+balance+" Rs. "+(a.getHour())/12+":"+a.getMinute()+":"+a.getSecond()+":"+a.getDayOfWeek());
     			    System.out.println("Your account has been created");
     			    break;
 				}
@@ -68,7 +68,7 @@ class Bank{
 						            double depositamount=new Scanner(System.in).nextDouble();
 						            balance += depositamount;
 									a=LocalDateTime.now();
-					transiction.add("DEPOSITE : "+depositamount+" Rs. "+(a.getHour())/12+":"+a.getMinute()+":"+a.getSecond());
+					transiction.add("DEPOSITE : "+depositamount+" Rs. "+(a.getHour())/12+":"+a.getMinute()+":"+a.getSecond()+":"+a.getDayOfWeek());
 						            System.out.println("Ammount has been cridited");
 						            break ;
 					                }
@@ -84,7 +84,7 @@ class Bank{
 							            if(withdrawamount<=balance){
 								        balance-=withdrawamount;
 										a=LocalDateTime.now();
-					transiction.add("WithDraw : "+withdrawamount+" Rs. "+(a.getHour())/12+":"+a.getMinute()+":"+a.getSecond());
+					transiction.add("WithDraw : "+withdrawamount+" Rs. "+(a.getHour())/12+":"+a.getMinute()+":"+a.getSecond()+":"+a.getDayOfWeek());
 								        System.out.println(" Ammount has been debited");
 							                }
 							            else {
