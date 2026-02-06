@@ -58,7 +58,7 @@ class Bank{
 					    features :
 					    for( ; ; ){
 					        System.out.println("\n***** features *****");
-					        System.out.println("1.Deposit\n 2.widthdraw\n 3.Chake balance \n 4.transiction\n 5.logout");
+					        System.out.println("1.Deposit\n 2.widthdraw\n 3.Check balance \n 4.transiction\n 5.logout");
 					        System.out.println("Enter your option");
 					        int opt=sc.nextInt();
 							switch (opt){
@@ -100,7 +100,7 @@ class Bank{
 										
 								   
 					            case 3:{
-					 	            System.out.println("CHAKE BALANCE");
+					 	            System.out.println("CHECK BALANCE");
 						            System.out.println("Enter your PIN");
 						            int pin4=new Scanner(System.in).nextInt();
 							        if(pin4==pin){
