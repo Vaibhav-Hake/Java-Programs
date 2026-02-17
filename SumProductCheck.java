@@ -6,7 +6,7 @@ class SumProductCheck{
 		int num=sc.nextInt();
 		int sum=0;
 		int pro=1;
-		while(num!=0){
+		while(num>0){
 			int rem=num%10;
 			sum+=rem;
 			pro*=rem;
