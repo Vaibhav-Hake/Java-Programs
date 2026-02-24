@@ -15,11 +15,11 @@ class PrimeBySq{
 					break;
 				}
 			}
-			if(i*i>num){
+			if(i*i>num){   
 				System.out.println("Prime");
 			}else{
 				System.out.println("not primer");
 			}
 		}
 	}
-}
+}k/
