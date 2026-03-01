@@ -42,6 +42,9 @@ class NthPrimeeff{
 			
 			
 		}
+		if(cnt!=n){
+			System.out.println("not that prime number in that range");
+		}
 		
 	}
 }
