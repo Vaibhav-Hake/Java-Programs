@@ -1,16 +1,18 @@
 import java.util.Scanner;
-class Pattern25{
+class Pattern27{
 	public static void main(String[]args){
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		int num=1;
-		for(int i=1;i<n;i++){
-			for(int j=0;j<i;j++){
-				System.out.print(num+" ");
+		for(int i=1;i<=n;i++){
+			int k=i;
+			for(int j=0;j<n;j++){
 				
-				num++;
+				System.out.print(k+" ");
+				k+=n;
 			}
+			
 			System.out.println();
+			
 		}
 	}
 }

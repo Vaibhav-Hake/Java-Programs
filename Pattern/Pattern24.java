@@ -8,7 +8,6 @@ class Pattern24{
 		for(int i=0;i<2*n;i++){
 			for(int j=0;j<n;j++){
 				System.out.print(a+" ");
-				
 				if(num<10){
 					System.out.print(num+"  ");
 				}else{
