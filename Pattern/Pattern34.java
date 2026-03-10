@@ -1,10 +1,11 @@
-import java .util.Scanner;
-class Pattern30{
+import java.util.Scanner;
+class Pattern34{
 	public static void main(String[]args){
 		Scanner sc=new Scanner(System.in);
-		int n= sc.nextInt();
-		int space=n/2 , star=1;
-		for(int i=0;i<n;i++){
+		int n=sc.nextInt();
+		int space=1;
+		int star=n/2;
+		for(int i=0;i<n/2;i++){
 			for(int j=0;j<space;j++){
 				System.out.print(" "+" ");
 			}
@@ -13,9 +14,6 @@ class Pattern30{
 			}
 			System.out.println();
 			if(i<n/2){
-				space--;
-				star+=2;
-			}else{
 				space++;
 				star-=2;
 			}
