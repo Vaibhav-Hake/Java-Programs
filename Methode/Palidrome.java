@@ -9,11 +9,14 @@ class Palidrome{
 		}
 		return rev;
 	}
+	public static boolean isPalidrome(int num){
+		return rev(num)==num; 
+	}
 	public static void main(String[]args){
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a Number :");
 		int num=sc.nextInt();
-		if(rev(num)==num){
+		if(isPalidrome(num)){
 			System.out.println("The Number is Palidrome");
 		}else{
 			System.out.println("The Number is Not Palidrome");
