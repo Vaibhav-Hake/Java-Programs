@@ -1,26 +1,25 @@
 import java.util.Scanner;
 class DuckNumber{
-	public static void Extract(int num){
+	public static boolean check(int num){
 		
 		while(num!=0){
 			int rem=num%10;
 			if(rem==0){
-				break;
+				return true;
 			}
 			num/=10;
 		}
-		if(num!=0){
-			System.out.println("The 0 is present in Given Number");
-		}else{
-			System.out.println("The 0 is not present in Given Number");
-		}
+		return false;
 		
 	}
 	public static void main(String[]args){
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a Number :");
 		int num=sc.nextInt();
-		
-		Extract(num);
+		if(check(num)){
+			System.out.println("DuckNumber");
+		}else{
+			System.out.println("NotDuck Number");
+		}
 	}
 }

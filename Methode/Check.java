@@ -1,19 +1,15 @@
 import java.util.Scanner;
 class Check{
-	public static void Extract(int num,int n){
+	public static boolean check(int num,int n){
 		
 		while(num!=0){
 			int rem=num%10;
 			if(rem==n){
-				break;
+			    return true;
 			}
 			num/=10;
 		}
-		if(num!=0){
-			System.out.println("The "+n+" is present in Given Number");
-		}else{
-			System.out.println("The "+n+" is not present in Given Number");
-		}
+		return false;
 		
 	}
 	public static void main(String[]args){
@@ -22,6 +18,10 @@ class Check{
 		int num=sc.nextInt();
 		System.out.println("Enter a Number for check :");
 		int n=sc.nextInt();
-		Extract(num,n);
+		if(check(num,n)){
+			System.out.println("yes");
+		}else{
+			System.out.println("No");
+		}
 	}
 }

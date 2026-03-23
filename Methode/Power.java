@@ -1,11 +1,11 @@
 import java.util.Scanner;
 class Power{
-	public static void pow(int num,int p){
-		int pow=1;
+	public static double pow(int num,int p){
+		double pow=1;
 		for(int i=0;i<p;i++){
 			pow*=num;
 		}
-		System.out.println(pow);
+		return pow;
 		
 		
 	}
@@ -15,7 +15,7 @@ class Power{
 		int num=sc.nextInt();
 		System.out.println("Enter a Power Value ");
 		int p=sc.nextInt();
-		pow(num,p);
+		System.out.println(pow(num,p));
 		
 	}
 }
