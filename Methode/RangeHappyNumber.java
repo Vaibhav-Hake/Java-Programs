@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class HappyNumber{
+class RangeHappyNumber{
 	public static int sumSqDigit(int num){
 		
 		int sum=0;
@@ -17,14 +17,21 @@ class HappyNumber{
 		}
 		return sum==1;
 	}
+	public static void printHappy(int start ,int end){
+		while(start<=end){
+			if(isHappy(start)){
+				System.out.println(start);
+			}
+			start++;
+		}
+	}
 	public static void main(String[]args){
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter a number");
-		int num=sc.nextInt();
-		if(isHappy(num)){
-			System.out.println("happy number");
-		}else{
-			System.out.println("Sad");
-		}
+		System.out.println("Enter a  Starting number");
+		int start=sc.nextInt();
+		System.out.println("Enter a  Ending number");
+		int end=sc.nextInt();
+		printHappy(start,end);
+		
 	}
 }
