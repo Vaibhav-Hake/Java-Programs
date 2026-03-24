@@ -4,29 +4,29 @@ class Prime{ //Optimize Version
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a Number");
 		int num=sc.nextInt();
-		isPrime(num);
+		if(isPrime(num)){
+			System.out.println("Prime");
+		}else{
+			System.out.println("Not Prime");
+		}
 			
 		
 	}
-	public static void  isPrime(int num){
+	public static boolean  isPrime(int num){
 		if(num==2){
-			System.out.println("The Number is Prime");
+			return true;
 		}
 		else if(num==1 ||num%2==0){
-			System.out.println("The Number is not Prime");
+			return false;
 		}
 		else{
 			int i=3;
 			for(;i*i<=num;i+=2){
 				if(num%i==0){
-					break;
+					return false;
 				}
 			}
-			if(i*i>num){
-				System.out.println("The Number is Prime ");
-			}else{
-				System.out.println("The Number not is Prime ");
-			}
+			return true;
 			
 		}
 	}

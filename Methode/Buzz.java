@@ -4,14 +4,13 @@ class Buzz{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a Number");
 		int num=sc.nextInt();
-		buzzNumber(num);
+		if(buzzNumber(num)){
+			System.out.println("it is a Buzz Number");
+		}else{
+			System.out.println("Not buzz Number");
+		}
 	}
-	public static void buzzNumber(int num){
-		if(num%7==0 || num%10==7){
-			System.out.println("Buzz Number");
-		}
-		else{
-			System.out.println(" not Buzz Number");
-		}
+	public static boolean buzzNumber(int num){
+		return (num%7==0 || num%10==7);
 	}
 }

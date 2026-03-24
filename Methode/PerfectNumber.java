@@ -4,14 +4,14 @@ class PerfectNumber{
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter a Number");
 		int num=sc.nextInt();
-		if(pNumber(num)==num){
+		if(isPerfect(num)){
 			System.out.println("PerFect Number");
 		}else{
 			System.out.println("Not PerfectNumber");
 		}
 		
 	}
-	public static int pNumber(int num){
+	public static int sum(int num){
 		int den=1;
 		int sum=0;
 		while(den<=num/2){
@@ -22,5 +22,8 @@ class PerfectNumber{
 		}
 		return sum;
 	
+	}
+	public static boolean isPerfect(int num){
+		return sum(num)==num;
 	}
 }
