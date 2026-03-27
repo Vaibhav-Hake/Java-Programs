@@ -5,7 +5,7 @@ class NextGretestInteger{
 	}
 	 
 	public static int nextGreater(int num){
-		for(int i=num-1;i<power(num);i++){
+		for(int i=num+1;i<power(num);i++){
 			if(containAllDigits(num,i)){
 				return i;
 			}
