@@ -23,7 +23,7 @@ class NextGretestInteger{
 				break;
 			}
 		}
-		return n2==0;
+		return n1==0;
 	}
 	public static int power(int num){
 		int pow=1;
@@ -51,8 +51,9 @@ class NextGretestInteger{
 						newNum=newNum*1;
 					}
 					else{
-						newNum=newNum*power(num)+num;
 						num/=10;
+						newNum=newNum*power(num)+num;
+						
 					}
 					break;
 				}
