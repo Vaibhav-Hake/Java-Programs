@@ -40,6 +40,8 @@ class NextGretestInteger{
 		else{
 			int newNum=0;
 			while(num!=0){
+				
+			
 				int last=num%10;
 				if(last!=digit){
 					newNum=newNum*10+last;
