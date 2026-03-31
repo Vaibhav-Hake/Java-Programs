@@ -2,15 +2,17 @@ class SwapNumber{
 	public static void main(String[]args){
 		int a=10;
 		int b=5;
-		/*a=a^b;
+		/* using Bitwise Operator
+		a=a^b;
 		b=b^a;
 		a=a^b;*/
 		
-		/*a=a+b;
+		/* using addition and Substracting
+		a=a+b;
 		b=a-b;
 		a=a-b;*/
 		
-		
+		// using multiplication and division
 		a=a*b;
 		b=a/b;
 		a=a/b;
