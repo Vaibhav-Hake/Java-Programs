@@ -5,7 +5,7 @@ class Prime{
 			if(num%den==0){
 				return false;
 			}else{
-				return isPrime(num,den+1);
+				return isPrime(num,den+1  );
 			}
 			
 		}else{
