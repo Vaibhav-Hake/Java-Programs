@@ -1,8 +1,7 @@
 import java.util.Scanner;
 class Hcf{
-	public static int lcm(int n1,int n2){
+	public static int gcd(int n1,int n2){
 		int small=n1<n2?n1:n2;
-		int i=1;
 		while(true){
 			if(n1%small==0&&n2%small==0){
 				return small;
@@ -16,6 +15,6 @@ class Hcf{
 		int n1=sc.nextInt();
 		System.out.println("Enter a Num2");
 		int n2=sc.nextInt();
-		System.out.println(lcm(n1,n2));
+		System.out.println(gcd(n1,n2));
 	}
 }
