@@ -6,7 +6,7 @@ class Test3{
 		 demo();
 	 }
 	 public static void demo(){
-		int a=52;
+		int a=85;
 		 System.out.println(a);
 		 demo2();
 	 }
