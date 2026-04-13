@@ -7,7 +7,7 @@ class Pattern{
 		int num=1;
 		for(int i=0;i<n;i++){
 			int cnt=0;
-			while(cnt<=i){
+			while(cnt<=i){   
 				if(isPrime(num)){
 					System.out.print(num+" ");
 					cnt++;
