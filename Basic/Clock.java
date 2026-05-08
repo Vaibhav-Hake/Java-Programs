@@ -4,13 +4,7 @@ class Clock{
 		Scanner sc=new Scanner (System.in);
 		System.out.println("Enter a Number : ");
 		int num=sc.nextInt();
-		if(num<=12){
-			System.out.println(num);
-		}
-		else{
-			num=num%12;
-			System.out.println(num);
-			
-		}
-	}
+	  int res=num<=12?num:num%12;
+System.out.println(res);	  
+    }
 }
